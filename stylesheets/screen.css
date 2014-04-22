@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -412,8 +412,228 @@ header nav a:first-child {
   padding: 0.3em 0;
 }
 
+/* line 315, ../sass/screen.scss */
+.grid {
+  margin: 40px auto 120px;
+  max-width: 1000px;
+  width: 90%;
+}
+/* line 319, ../sass/screen.scss */
+.grid a {
+  float: left;
+  max-width: 250px;
+  width: 25%;
+  color: #333;
+}
+/* line 325, ../sass/screen.scss */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+  background: #333;
+}
+/* line 330, ../sass/screen.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+/* line 338, ../sass/screen.scss */
+.grid figure figcaption {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 346, ../sass/screen.scss */
+.grid figure figcaption h2 {
+  height: 2em;
+  margin: 0 0 20px 0;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 130%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 357, ../sass/screen.scss */
+.grid figure figcaption p {
+  padding: 0 20px;
+  color: #aaa;
+  font-weight: 300;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* line 369, ../sass/screen.scss */
+.grid a:nth-child(odd) {
+  margin: 30px 0 -30px 0;
+}
+
+/* line 373, ../sass/screen.scss */
+.grid figcaption h2,
+.grid figcaption p {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+/* line 377, ../sass/screen.scss */
+.grid figure button {
+  position: absolute;
+  padding: 4px 20px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* line 390, ../sass/screen.scss */
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style for SVG */
+/* line 396, ../sass/screen.scss */
+.grid svg {
+  position: absolute;
+  top: -1px;
+  /* fixes rendering issue in FF */
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 404, ../sass/screen.scss */
+.grid svg path {
+  fill: #fff;
+}
+
+/* Hover effects */
+/* line 409, ../sass/screen.scss */
+.grid a:hover figure img {
+  opacity: 1;
+}
+
+/* line 414, ../sass/screen.scss */
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 419, ../sass/screen.scss */
+.grid a:hover figcaption p {
+  opacity: 0;
+}
+
+/* Individual styles */
+/* line 424, ../sass/screen.scss */
+.demo-1 body {
+  background: #3498db;
+}
+
+/* line 428, ../sass/screen.scss */
+.grid figure button {
+  top: 50%;
+  left: 50%;
+  border: 3px solid #fff;
+  background: transparent;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+  transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+/* line 439, ../sass/screen.scss */
+.grid a:hover figure button {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+  transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+@media screen and (max-width: 58em) {
+  /* line 450, ../sass/screen.scss */
+  .grid a {
+    width: 33.333%;
+  }
+
+  /* line 454, ../sass/screen.scss */
+  .grid a:nth-child(odd) {
+    margin: 0;
+  }
+
+  /* line 458, ../sass/screen.scss */
+  .grid a:nth-child(3n-1) {
+    margin: 30px 0 -30px 0;
+  }
+}
+@media screen and (max-width: 45em) {
+  /* line 464, ../sass/screen.scss */
+  .grid {
+    max-width: 500px;
+  }
+
+  /* line 468, ../sass/screen.scss */
+  .grid a {
+    width: 50%;
+  }
+
+  /* line 472, ../sass/screen.scss */
+  .grid a:nth-child(3n-1) {
+    margin: 0;
+  }
+
+  /* line 476, ../sass/screen.scss */
+  .grid a:nth-child(even) {
+    margin: 30px 0 -30px 0;
+  }
+
+  /* line 481, ../sass/screen.scss */
+  .grid figcaption h2 {
+    margin-bottom: 0px;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  /* line 487, ../sass/screen.scss */
+  .grid figcaption p {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 27em) {
+  /* line 494, ../sass/screen.scss */
+  .grid {
+    max-width: 250px;
+  }
+
+  /* line 498, ../sass/screen.scss */
+  .grid a {
+    width: 100%;
+  }
+
+  /* line 502, ../sass/screen.scss */
+  .grid a:nth-child(even) {
+    margin: 0;
+  }
+}
 /*=============== Contacto =================*/
-/* line 317, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 #video_background {
   position: fixed;
   left: 0px;
@@ -427,7 +647,7 @@ header nav a:first-child {
   -webkit-filter: blur(3px);
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 #video_pattern {
   background: url(../img/layout/somosBg.png);
   position: fixed;
@@ -439,23 +659,23 @@ header nav a:first-child {
   opacity: 0.9;
 }
 
-/* line 343, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 #contacto {
   position: relative;
   height: 1000px;
 }
-/* line 346, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 #contacto .infoContacto {
   width: 1200px;
   margin: 8em auto;
   z-index: 200;
 }
-/* line 350, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 #contacto .infoContacto form, #contacto .infoContacto > div {
   float: left;
   width: 50%;
 }
-/* line 354, ../sass/screen.scss */
+/* line 546, ../sass/screen.scss */
 #contacto .infoContacto form {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -464,7 +684,7 @@ header nav a:first-child {
   box-sizing: border-box;
   padding-left: 5%;
 }
-/* line 359, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 #contacto .infoContacto form label {
   display: block;
   color: white;
@@ -472,7 +692,7 @@ header nav a:first-child {
   font-size: 2em;
   margin-bottom: 1em;
 }
-/* line 366, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 #contacto .infoContacto form input {
   display: block;
   margin-top: 0.5em;
@@ -487,13 +707,13 @@ header nav a:first-child {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 376, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 #contacto .infoContacto form textarea {
   font-size: 0.5em;
   width: 60%;
   padding-left: 2%;
 }
-/* line 381, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 #contacto .infoContacto form input[type="submit"] {
   font-size: 1.2em;
   font-family: "bebas_neueregular";
@@ -505,11 +725,11 @@ header nav a:first-child {
   display: inline-block;
   letter-spacing: 0.1em;
 }
-/* line 391, ../sass/screen.scss */
+/* line 583, ../sass/screen.scss */
 #contacto .infoContacto form input[type="submit"]:hover {
   color: #2deae0;
 }
-/* line 396, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 #contacto .infoContacto h3 {
   font-size: 3em;
   font-family: "bebas_neueregular";
@@ -517,7 +737,7 @@ header nav a:first-child {
   letter-spacing: 3px;
   margin-bottom: 0.5em;
 }
-/* line 403, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 #contacto .infoContacto p {
   font-size: 2em;
   font-family: "bebas_neuethin";
@@ -525,61 +745,61 @@ header nav a:first-child {
   letter-spacing: 3px;
   margin-bottom: 0.5em;
 }
-/* line 409, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 #contacto .infoContacto p:last-child {
   color: #82fef7;
 }
-/* line 413, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 #contacto .infoContacto ul li {
   margin-top: 2em;
   display: inline-block;
   width: 8.5%;
   height: 2.4em;
 }
-/* line 418, ../sass/screen.scss */
+/* line 610, ../sass/screen.scss */
 #contacto .infoContacto ul li a {
   height: 2.4em;
   width: 100%;
 }
-/* line 421, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 #contacto .infoContacto ul li a.fb {
   background-position: -85px 0;
 }
-/* line 422, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 #contacto .infoContacto ul li a.tw {
   background-position: 0 0;
 }
-/* line 423, ../sass/screen.scss */
+/* line 615, ../sass/screen.scss */
 #contacto .infoContacto ul li a.in {
   background-position: -156px 0;
 }
-/* line 424, ../sass/screen.scss */
+/* line 616, ../sass/screen.scss */
 #contacto .infoContacto ul li a.sk {
   background-position: -235px 0;
 }
-/* line 426, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.fb {
   background-position: -85px -67px;
 }
-/* line 427, ../sass/screen.scss */
+/* line 619, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.tw {
   background-position: 0 -67px;
 }
-/* line 428, ../sass/screen.scss */
+/* line 620, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.in {
   background-position: -156px -67px;
 }
-/* line 429, ../sass/screen.scss */
+/* line 621, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.sk {
   background-position: -235px -67px;
 }
-/* line 434, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 #contacto .footer {
   position: relative;
   bottom: 0;
   text-align: center;
 }
-/* line 438, ../sass/screen.scss */
+/* line 630, ../sass/screen.scss */
 #contacto .footer p {
   border-top: 1px solid white;
   padding-top: 1em;
@@ -595,25 +815,25 @@ header nav a:first-child {
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-/* line 449, ../sass/screen.scss */
+/* line 641, ../sass/screen.scss */
 #contacto .footer p:hover {
   color: #2deae0;
 }
 
 /* ===================================== Helper Clases ===================================== */
-/* line 459, ../sass/screen.scss */
+/* line 651, ../sass/screen.scss */
 .sprite {
   background-image: url(../img/layout/sprites.png);
   background-repeat: no-repeat;
   display: block;
 }
 
-/* line 467, ../sass/screen.scss */
+/* line 659, ../sass/screen.scss */
 img {
   max-width: 100%;
 }
 
-/* line 471, ../sass/screen.scss */
+/* line 663, ../sass/screen.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -621,7 +841,7 @@ img {
   *text-indent: -9999px;
 }
 
-/* line 478, ../sass/screen.scss */
+/* line 670, ../sass/screen.scss */
 .ir:before {
   content: "";
   display: block;
@@ -629,13 +849,13 @@ img {
   height: 150%;
 }
 
-/* line 485, ../sass/screen.scss */
+/* line 677, ../sass/screen.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 490, ../sass/screen.scss */
+/* line 682, ../sass/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -647,7 +867,7 @@ img {
   width: 1px;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -658,24 +878,24 @@ img {
   width: auto;
 }
 
-/* line 511, ../sass/screen.scss */
+/* line 703, ../sass/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 516, ../sass/screen.scss */
+/* line 708, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 521, ../sass/screen.scss */
+/* line 713, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 525, ../sass/screen.scss */
+/* line 717, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
