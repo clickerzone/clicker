@@ -1,0 +1,560 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/transition";
+
+
+body,p,h1,h2,h3,h4,h5,h6,li,ul,ol{margin:0;padding:0}
+
+/*FONTS*/
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../fonts/bebasneue_bold-webfont.eot');
+    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../fonts/bebasneue_book-webfont.eot');
+    src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_book-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_book-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('../fonts/bebasneue_light-webfont.eot');
+    src: url('../fonts/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_light-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_light-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue_regular-webfont.eot');
+    src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_regular-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_regular-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('../fonts/bebasneue_thin-webfont.eot');
+    src: url('../fonts/bebasneue_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_thin-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_thin-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_thin-webfont.svg#bebas_neuethin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* VARIABLES Y MIXINS*/
+$mxw:1200px;
+$titleFont:'Arvo', serif;
+$regular:'bebas_neueregular';
+$bold:'bebas_neuebold';
+$book:'bebas_neuebook';
+$light:'bebas_neuelight';
+$thin:'bebas_neuethin';
+$aqua:#2DEAE0;
+
+
+@mixin transition($prop, $duration, $timing){
+  -webkit-transition: $prop $duration $timing;
+  -moz-transition: $prop $duration $timing;
+  -o-transition: $prop $duration $timing;
+  transition: $prop $duration $timing;
+}
+@mixin transform($rotate,$scale,$skew,$translate){
+  transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+  -webkit-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+  -moz-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+  -o-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+  -ms-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* ===================================== Site ===================================== */
+
+.wrapper{margin:0 auto;max-width:$mxw;}
+.cursor{cursor: url(../img/layout/clickerCursor.svg), auto;height:100%;width:100%;position:absolute;top:0;left:0;}
+a{cursor: url(../img/layout/pointer.svg), auto;}
+
+/* ===================================== Header ===================================== */
+
+header{
+  position:fixed;
+  z-index:6;
+  width:100%;
+  .invisible{display:none}
+  h1{
+    @include transition(all,0.5s,ease-in);
+    margin:1em 0 0.7em;
+    float:left;
+    width:120px/$mxw*100%;
+    height:2.5em;
+    a{
+      display:block;
+      width:100%;
+      height:2.5em;
+      background:url(../img/content/logo.svg)no-repeat;
+    }
+  }
+  nav{
+    width:432px/$mxw*100%;
+    float:right;
+    a{
+      font-family:$titleFont;
+      font-size:0.9em;
+      float:left;
+      padding:2em 12px/462px*100% 1em;
+      display:block;
+      text-decoration:none;
+      text-transform:uppercase;
+      color:white;
+      @include transition(all,0.5s,ease-in);
+      &:hover{
+        color:$aqua;
+      }
+      &:first-child{
+        margin-left:0;
+      }
+    }
+  }
+}
+
+/* ===================================== Clase para todas las secciones ===================================== */
+.story { height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);} 
+
+
+
+/* ===================================== Seccion Somos ===================================== */
+#somos{ 
+	background: url(../img/layout/somosBg.png) 50% 0 fixed;
+  .clickerLogo{background: url(../img/content/logoBig.png) 50% 200px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%;position:absolute; margin: 0 auto;}
+	.cycle-slideshow{
+		margin-top:40%;
+		div{
+      margin-left:17.3%;
+  		h2{
+        color:#2DEAE0;
+        text-transform:uppercase;
+        font-family:$thin;
+        font-size:12em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      }	
+		}
+	
+	}
+}
+
+/* ===================================== Seccion Hacemos ===================================== */
+
+#hacemos{
+	background:url(../img/layout/ofrecemosBg.jpg)  50% 0 no-repeat;
+  height:800px;
+  .wrapper{
+    position:relative;
+  }
+  .jaula{position:absolute}
+
+  .infoHacemos{
+    max-width:600px;
+    margin:9em 0 0;
+    padding: 3em 1em 3em 2em;
+    z-index:200;
+    background-color:#acdfc9;
+    h3{
+      font-family: 'bebas_neuebook',sans-serif;
+      color: white;
+      font-size:4em;
+      margin-bottom:0.4em;
+      letter-spacing:0.1em;
+    }
+    p{
+      font-family: 'bebas_neuelight',sans-serif;
+      font-size: 1.9em;
+      color:white;
+      line-height:1.3em;
+      letter-spacing:0.1em;
+    }
+  }
+ 
+}
+
+/* ===================================== Seccion Isotipo ===================================== */
+
+#isotipo{
+  background:url(../img/layout/somosBg.png) 50% 0;
+  height:600px;
+  border-top: 1px solid rgba(0,0,0,0.3) !important;
+  .arrow{
+    background: url(../img/layout/arrow.png) transparent 40% 100px no-repeat; min-height: 700px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: absolute; margin: 0 auto;
+  }
+ 
+}
+
+/* ===================================== Seccion Isotipo ===================================== */
+
+#servicios{
+  background:url(../img/layout/serviciosBg.jpg) no-repeat;
+  height:870px;
+  position:relative;
+  .lamp{
+    background: url(../img/content/lamp.png) transparent 50% -800px no-repeat;min-height:1000px;padding:0;margin:0;width:100%;max-width:1920px;position:absolute;margin: 0 auto;
+  }
+  .computer,.books,.iphone{
+    position:absolute;
+    z-index:2000;
+  }
+
+  .infoServicios{
+    max-width:1200px;
+    margin:0 auto;
+    padding-top: 10em;
+    z-index:200;
+    h3{
+      font-family: 'bebas_neuebook',sans-serif;
+      color: white;
+      font-size:4em;
+      margin-bottom:0.4em;
+      letter-spacing:0.1em;
+    }
+  }
+ 
+}
+
+
+/*=============== tooltip =================*/
+/*a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999;
+}*/
+
+/*=============== Equipo =================*/
+#equipo{
+  height:1100px;
+  background:url(../img/layout/equipo.png);
+  .infoEquipo{
+    max-width:1200px;
+    margin:0 auto;
+    padding-top: 10em;
+    z-index:200;
+    h3{
+      font-family: 'bebas_neuebook',sans-serif;
+      color: #d2d1d1;
+      font-size:4em;
+      margin-bottom:0.7em;
+      letter-spacing:0.1em;
+    }
+  }
+  .tres div{
+    /*background-color:#ccc;*/
+    width:25%;
+    float:left;
+    margin-left:6.25%;
+    text-align:center;
+    margin-bottom:2em;
+    h4{
+      width:100%;
+      font-size:2.5em;
+      font-family:$light;
+      color:#70736c;
+      background:#faf0c3;
+      border-top:5px solid #fcfbea;
+      border-bottom:5px solid #fcfbea;
+      padding:0.3em 0;
+    }
+    &:last-child{
+      margin-right:6.25%;
+    }
+  }
+  .dos div{
+    width:25%;
+    float:left;
+    text-align:center;
+    margin-left:6.25%;
+    &:first-child{
+      margin-left:21.87%;
+    }
+    &:last-child{
+      margin-right:21.87%;
+    }
+    h4{
+      width:100%;
+      font-size:2.5em;
+      font-family:$light;
+      color:#70736c;
+      background:#faf0c3;
+      border-top:5px solid #fcfbea;
+      border-bottom:5px solid #fcfbea;
+      padding:0.3em 0;
+    }
+  }
+}
+
+/*=============== Contacto =================*/
+
+#video_background {
+  position: fixed; 
+  left: 0px; 
+  top: 0px; 
+  width: 100%; 
+  height: 100%; 
+  width: auto; 
+  height: auto; 
+  z-index: -1000; 
+  overflow: hidden; 
+  -webkit-filter: blur(3px);
+
+
+}
+#video_pattern { 
+  background:url(../img/layout/somosBg.png);
+  position: fixed;  
+  left: 0px; 
+  top: 0px; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -500; 
+  opacity:0.9;
+}
+
+
+#contacto{
+  position: relative;
+  height:1000px;
+  .infoContacto{
+    width:1200px;
+    margin:8em auto;
+    z-index:200;
+    form, > div{
+      float:left;
+      width:50%;
+    }
+     form{
+           -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;      
+      padding-left:5%;
+      label{
+        display:block;
+        color:white;
+        font-family:$light;
+        font-size:2em;
+        margin-bottom:1em;
+      }
+      input{
+        display:block;
+        margin-top:0.5em; 
+        height:2em;
+        line-height:2em;
+        width:60%;
+        font-size:0.5em;
+        padding-left:2%; 
+         @include border-radius(4px);
+      }
+      textarea{
+        font-size:0.5em;
+        width:60%;
+        padding-left:2%;
+      }
+      input[type="submit"]{
+        font-size:1.2em;
+        font-family:$regular;
+        color:white;
+        border:0;
+        border-top:2px solid white;
+        padding-top:0.5em;
+        background:none;
+        display:inline-block;
+        letter-spacing:0.1em;
+        &:hover{
+          color:$aqua;
+        }
+      }
+    }
+    h3{
+      font-size:3em;
+      font-family:$regular;
+      color:$aqua;
+      letter-spacing:3px;
+      margin-bottom:0.5em;
+    }
+    p{
+      font-size: 2em;
+      font-family:$thin;
+      color:white;
+      letter-spacing:3px;
+      margin-bottom:0.5em;
+      &:last-child{
+        color:#82fef7;
+      }
+    }
+    ul li{
+      margin-top:2em;
+      display:inline-block;
+      width:8.5%;
+      height:2.4em;
+      a{
+        height:2.4em;
+        width:100%;
+        &.fb{background-position: -85px 0;}
+        &.tw{background-position: 0 0;}
+        &.in{background-position: -156px 0;}
+        &.sk{background-position: -235px 0;}
+        &:hover{
+          &.fb{background-position: -85px -67px;}
+          &.tw{background-position: 0 -67px;}
+          &.in{background-position: -156px -67px;}
+          &.sk{background-position: -235px -67px;}
+        }
+      }
+    }
+  }
+  .footer{
+    position:relative;
+    bottom:0;
+    text-align:center;
+    p{
+      border-top:1px solid white; 
+      padding-top:1em;
+      width:50%;
+      margin:0 auto;
+      display:inline-block;
+      color:white;
+      font-size: 1em;
+      font-family:$regular;
+      letter-spacing:0.4em;
+      @include transition(all,0.5s,ease-in);
+      &:hover{
+        color:$aqua;
+      }
+    }
+  }
+}
+
+
+/* ===================================== Helper Clases ===================================== */
+
+.sprite{
+    background-image:url(../img/layout/sprites.png);
+    background-repeat:no-repeat;
+    display:block;
+}
+
+
+
+img{
+	max-width:100%;
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
