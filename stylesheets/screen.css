@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -340,54 +340,20 @@ header nav a:first-child {
 }
 
 /*=============== tooltip =================*/
-/*a.tooltips {
-  position: relative;
-  display: inline;
-}
-a.tooltips span {
-  position: absolute;
-  width:140px;
-  color: #FFFFFF;
-  background: #000000;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  visibility: hidden;
-  border-radius: 6px;
-}
-a.tooltips span:after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -8px;
-  width: 0; height: 0;
-  border-top: 8px solid #000000;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
-}
-a:hover.tooltips span {
-  visibility: visible;
-  opacity: 0.8;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -76px;
-  z-index: 999;
-}*/
 /*=============== Equipo =================*/
-/* line 287, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 #equipo {
   height: 1100px;
   background: url(../img/layout/equipo.png);
 }
-/* line 290, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #equipo .infoEquipo {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 10em;
   z-index: 200;
 }
-/* line 295, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 #equipo .infoEquipo h3 {
   font-family: 'bebas_neuebook',sans-serif;
   color: #d2d1d1;
@@ -395,7 +361,7 @@ a:hover.tooltips span {
   margin-bottom: 0.7em;
   letter-spacing: 0.1em;
 }
-/* line 303, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #equipo .tres div {
   /*background-color:#ccc;*/
   width: 25%;
@@ -404,7 +370,7 @@ a:hover.tooltips span {
   text-align: center;
   margin-bottom: 2em;
 }
-/* line 310, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 #equipo .tres div h4 {
   width: 100%;
   font-size: 2.5em;
@@ -415,26 +381,26 @@ a:hover.tooltips span {
   border-bottom: 5px solid #fcfbea;
   padding: 0.3em 0;
 }
-/* line 320, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #equipo .tres div:last-child {
   margin-right: 6.25%;
 }
-/* line 324, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 #equipo .dos div {
   width: 25%;
   float: left;
   text-align: center;
   margin-left: 6.25%;
 }
-/* line 329, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #equipo .dos div:first-child {
   margin-left: 21.87%;
 }
-/* line 332, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #equipo .dos div:last-child {
   margin-right: 21.87%;
 }
-/* line 335, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 #equipo .dos div h4 {
   width: 100%;
   font-size: 2.5em;
@@ -447,7 +413,7 @@ a:hover.tooltips span {
 }
 
 /*=============== Contacto =================*/
-/* line 350, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #video_background {
   position: fixed;
   left: 0px;
@@ -461,7 +427,7 @@ a:hover.tooltips span {
   -webkit-filter: blur(3px);
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 #video_pattern {
   background: url(../img/layout/somosBg.png);
   position: fixed;
@@ -473,23 +439,23 @@ a:hover.tooltips span {
   opacity: 0.9;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #contacto {
   position: relative;
   height: 1000px;
 }
-/* line 379, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #contacto .infoContacto {
   width: 1200px;
   margin: 8em auto;
   z-index: 200;
 }
-/* line 383, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 #contacto .infoContacto form, #contacto .infoContacto > div {
   float: left;
   width: 50%;
 }
-/* line 387, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 #contacto .infoContacto form {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -498,7 +464,7 @@ a:hover.tooltips span {
   box-sizing: border-box;
   padding-left: 5%;
 }
-/* line 392, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 #contacto .infoContacto form label {
   display: block;
   color: white;
@@ -506,7 +472,7 @@ a:hover.tooltips span {
   font-size: 2em;
   margin-bottom: 1em;
 }
-/* line 399, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 #contacto .infoContacto form input {
   display: block;
   margin-top: 0.5em;
@@ -521,13 +487,13 @@ a:hover.tooltips span {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 409, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 #contacto .infoContacto form textarea {
   font-size: 0.5em;
   width: 60%;
   padding-left: 2%;
 }
-/* line 414, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 #contacto .infoContacto form input[type="submit"] {
   font-size: 1.2em;
   font-family: "bebas_neueregular";
@@ -539,11 +505,11 @@ a:hover.tooltips span {
   display: inline-block;
   letter-spacing: 0.1em;
 }
-/* line 424, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 #contacto .infoContacto form input[type="submit"]:hover {
   color: #2deae0;
 }
-/* line 429, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 #contacto .infoContacto h3 {
   font-size: 3em;
   font-family: "bebas_neueregular";
@@ -551,7 +517,7 @@ a:hover.tooltips span {
   letter-spacing: 3px;
   margin-bottom: 0.5em;
 }
-/* line 436, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 #contacto .infoContacto p {
   font-size: 2em;
   font-family: "bebas_neuethin";
@@ -559,61 +525,61 @@ a:hover.tooltips span {
   letter-spacing: 3px;
   margin-bottom: 0.5em;
 }
-/* line 442, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 #contacto .infoContacto p:last-child {
   color: #82fef7;
 }
-/* line 446, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 #contacto .infoContacto ul li {
   margin-top: 2em;
   display: inline-block;
   width: 8.5%;
   height: 2.4em;
 }
-/* line 451, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 #contacto .infoContacto ul li a {
   height: 2.4em;
   width: 100%;
 }
-/* line 454, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 #contacto .infoContacto ul li a.fb {
   background-position: -85px 0;
 }
-/* line 455, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 #contacto .infoContacto ul li a.tw {
   background-position: 0 0;
 }
-/* line 456, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 #contacto .infoContacto ul li a.in {
   background-position: -156px 0;
 }
-/* line 457, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #contacto .infoContacto ul li a.sk {
   background-position: -235px 0;
 }
-/* line 459, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.fb {
   background-position: -85px -67px;
 }
-/* line 460, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.tw {
   background-position: 0 -67px;
 }
-/* line 461, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.in {
   background-position: -156px -67px;
 }
-/* line 462, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 #contacto .infoContacto ul li a:hover.sk {
   background-position: -235px -67px;
 }
-/* line 467, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 #contacto .footer {
   position: relative;
   bottom: 0;
   text-align: center;
 }
-/* line 471, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 #contacto .footer p {
   border-top: 1px solid white;
   padding-top: 1em;
@@ -629,25 +595,25 @@ a:hover.tooltips span {
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-/* line 482, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 #contacto .footer p:hover {
   color: #2deae0;
 }
 
 /* ===================================== Helper Clases ===================================== */
-/* line 492, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .sprite {
   background-image: url(../img/layout/sprites.png);
   background-repeat: no-repeat;
   display: block;
 }
 
-/* line 500, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 img {
   max-width: 100%;
 }
 
-/* line 504, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -655,7 +621,7 @@ img {
   *text-indent: -9999px;
 }
 
-/* line 511, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .ir:before {
   content: "";
   display: block;
@@ -663,13 +629,13 @@ img {
   height: 150%;
 }
 
-/* line 518, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 523, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -681,7 +647,7 @@ img {
   width: 1px;
 }
 
-/* line 535, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -692,24 +658,24 @@ img {
   width: auto;
 }
 
-/* line 544, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 549, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 554, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 558, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
