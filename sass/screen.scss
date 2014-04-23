@@ -267,54 +267,11 @@ header{
       letter-spacing:0.1em;
     }
   }
-  .tres div{
-    /*background-color:#ccc;*/
-    width:25%;
-    float:left;
-    margin-left:6.25%;
-    text-align:center;
-    margin-bottom:2em;
-    h4{
-      width:100%;
-      font-size:2.5em;
-      font-family:$light;
-      color:#70736c;
-      background:#faf0c3;
-      border-top:5px solid #fcfbea;
-      border-bottom:5px solid #fcfbea;
-      padding:0.3em 0;
-    }
-    &:last-child{
-      margin-right:6.25%;
-    }
-  }
-  .dos div{
-    width:25%;
-    float:left;
-    text-align:center;
-    margin-left:6.25%;
-    &:first-child{
-      margin-left:21.87%;
-    }
-    &:last-child{
-      margin-right:21.87%;
-    }
-    h4{
-      width:100%;
-      font-size:2.5em;
-      font-family:$light;
-      color:#70736c;
-      background:#faf0c3;
-      border-top:5px solid #fcfbea;
-      border-bottom:5px solid #fcfbea;
-      padding:0.3em 0;
-    }
-  }
 }
 
 .grid {
   margin: 40px auto 120px;
-  max-width: 1000px;
+  max-width: 1250px;
   width: 90%;
   a {
     float: left;
@@ -345,18 +302,21 @@ header{
       text-align: center;
       h2 {
         height:2em;
-        margin: 0 0 20px 0;
+        
         color: #3498db;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-weight: 300;
-        font-size: 130%;
+        font-family: 'bebas_neuebook',sans-serif;
+        font-weight: 600;
+        font-size: 1.7em;
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
       }
       p {
         padding: 0 20px;
         color: #aaa;
+        font-family: 'bebas_neuebook',sans-serif;
+        font-size: 1.3em;
         font-weight: 300;
         -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
         transition: opacity 0.3s, transform 0.3s;
@@ -374,7 +334,7 @@ header{
   -webkit-transform: translateY(50px);
   transform: translateY(50px);
 }
-.grid figure button {
+.grid figure span {
   position: absolute;
   padding: 4px 20px;
   border: none;
@@ -387,7 +347,7 @@ header{
 .grid figcaption,
 .grid figcaption h2,
 .grid figcaption p,
-.grid figure button {
+.grid figure span {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -402,7 +362,7 @@ header{
 }
 
 .grid svg path {
-  fill: #fff;
+  fill: #ecf0f1;
 }
 
 /* Hover effects */
@@ -425,8 +385,9 @@ header{
   background: #3498db;
 }
 
-.grid figure button{
-  top: 50%;
+.grid figure span{
+  font-family:$regular; 
+  top: 70%;
   left: 50%;
   border: 3px solid #fff;
   background: transparent;
@@ -436,7 +397,7 @@ header{
   transform: translateY(-50%) translateX(-50%) scale(0.25);
 }
 
-.grid a:hover figure button{
+.grid a:hover figure span{
   opacity: 1;
   -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
   transform: translateY(-50%) translateX(-50%) scale(1);

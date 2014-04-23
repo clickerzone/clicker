@@ -23,6 +23,17 @@ $(document).ready(function(){
 		
 	});
 
+	$('#equipo').waypoint(function() {
+		if($(".grid").hasClass('invisible')){
+			$(".grid").removeClass('invisible').addClass("fadeInLeft");
+		}else{
+			$(".grid").addClass('invisible');
+		}
+	});
+
+
+
+
 	if(titles.hasClass("cycle-slide-active")){
 		$(titles).each(function(index){
 			if(index===0){
