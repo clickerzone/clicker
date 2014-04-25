@@ -106,7 +106,7 @@ a{cursor: url(../img/layout/pointer.svg), auto;}
 
 header{
   position:fixed;
-  z-index:6;
+  z-index:2000;
   width:100%;
   .invisible{display:none}
   h1{
@@ -146,12 +146,12 @@ header{
 }
 
 /* ===================================== Clase para todas las secciones ===================================== */
-.story { height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);} 
+.story { height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
 
 
 
 /* ===================================== Seccion Somos ===================================== */
-#somos{ 
+#somos{
 	background: url(../img/layout/somosBg.png) 50% 0 fixed;
   .clickerLogo{background: url(../img/content/logobig.png) 50% 200px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%;position:absolute; margin: 0 auto;}
 	.cycle-slideshow{
@@ -164,9 +164,9 @@ header{
         font-family:$thin;
         font-size:12em;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-      }	
+      }
 		}
-	
+
 	}
 }
 
@@ -201,7 +201,7 @@ header{
       letter-spacing:0.1em;
     }
   }
- 
+
 }
 
 /* ===================================== Seccion Isotipo ===================================== */
@@ -213,7 +213,7 @@ header{
   .arrow{
     background: url(../img/layout/arrow.png) transparent 40% 100px no-repeat; min-height: 700px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: absolute; margin: 0 auto;
   }
- 
+
 }
 
 /* ===================================== Seccion Isotipo ===================================== */
@@ -253,7 +253,7 @@ header{
       letter-spacing:0.1em;
     }
   }
- 
+
 }
 
 
@@ -270,7 +270,7 @@ header{
 
     display: none;
     position: absolute;
-    
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -380,7 +380,7 @@ header{
     }
   }
 }
- 
+
 
 .grid a:nth-child(odd) {
   margin: 30px 0 -30px 0;
@@ -442,7 +442,7 @@ header{
 }
 
 .grid figure span{
-  font-family:$regular; 
+  font-family:$regular;
   top: 70%;
   left: 50%;
   border: 3px solid #fff;
@@ -524,27 +524,27 @@ header{
 /*=============== Contacto =================*/
 
 #video_background {
-  position: fixed; 
-  left: 0px; 
-  top: 0px; 
-  width: 100%; 
-  height: 100%; 
-  width: auto; 
-  height: auto; 
-  z-index: -1000; 
-  overflow: hidden; 
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
   -webkit-filter: blur(3px);
 
 
 }
-#video_pattern { 
+#video_pattern {
   background:url(../img/layout/somosBg.png);
-  position: fixed;  
-  left: 0px; 
-  top: 0px; 
-  width: 100%; 
-  height: 100%; 
-  z-index: -500; 
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -500;
   opacity:0.9;
 }
 
@@ -563,7 +563,7 @@ header{
      form{
            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-   box-sizing: border-box;      
+   box-sizing: border-box;
       padding-left:5%;
       label{
         display:block;
@@ -574,12 +574,12 @@ header{
       }
       input{
         display:block;
-        margin-top:0.5em; 
+        margin-top:0.5em;
         height:2em;
         line-height:2em;
         width:80%;
         font-size:0.5em;
-        padding-left:2%; 
+        padding-left:2%;
          @include border-radius(4px);
       }
       textarea{
@@ -645,7 +645,7 @@ header{
     bottom:0;
     text-align:center;
     p{
-      border-top:1px solid white; 
+      border-top:1px solid white;
       padding-top:1em;
       width:50%;
       margin:0 auto;

@@ -20,16 +20,9 @@ $(document).ready(function(){
 		} else {
 			$(logo).addClass('invisible');
 		}
-		
+
 	});
 
-	$('#equipo').waypoint(function() {
-		if($(".grid").hasClass('invisible')){
-			$(".grid").removeClass('invisible').addClass("fadeInLeft");
-		}else{
-			$(".grid").addClass('invisible');
-		}
-	});
 
 
 	/*SERVICIOS*/
@@ -71,7 +64,7 @@ function init() {
 			easing = mina.easeinout;
 
 		[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
-			var s = Snap( el.querySelector( 'svg' ) ), 
+			var s = Snap( el.querySelector( 'svg' ) ),
 			path = s.select( 'path' ),
 				pathConfig = {
 					from : path.attr( 'd' ),
@@ -90,5 +83,5 @@ function init() {
 
 	init();
 
-	
+
 });
