@@ -32,8 +32,14 @@ $(document).ready(function(){
 	});
 
 
+	/*SERVICIOS*/
 
 
+
+
+
+
+	/*SERVICIOS*/
 	if(titles.hasClass("cycle-slide-active")){
 		$(titles).each(function(index){
 			if(index===0){

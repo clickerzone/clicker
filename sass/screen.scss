@@ -228,6 +228,16 @@ header{
   .computer,.books,.iphone{
     position:absolute;
     z-index:2000;
+
+    &:hover{
+      ul{
+        display: block;
+      }
+    }
+
+    img{
+      cursor: url(../img/layout/pointer.svg), auto;
+    }
   }
 
   .infoServicios{
@@ -249,7 +259,54 @@ header{
 
 /*=============== tooltip =================*/
 
+.tooltip{
+  position: relative;
 
+  ul{
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+
+    display: none;
+    position: absolute;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+      padding: 10px;
+      background-color: #fff;
+
+    li{
+      color: #333;
+      font-family: $regular;
+      font-size: 30px;
+    }
+  }
+}
+
+.computer{
+  ul{
+    top: 100px;
+    left: -200px;
+  }
+}
+
+.books{
+  ul{
+    top: 39px;
+    left: -102px;
+  }
+}
+
+.iphone{
+  ul{
+    width: 250px;
+    top: 30px;
+    left: 157px;
+  }
+}
 /*=============== Equipo =================*/
 #equipo{
   height:1100px;
@@ -520,14 +577,14 @@ header{
         margin-top:0.5em; 
         height:2em;
         line-height:2em;
-        width:60%;
+        width:80%;
         font-size:0.5em;
         padding-left:2%; 
          @include border-radius(4px);
       }
       textarea{
         font-size:0.5em;
-        width:60%;
+        width:80%;
         padding-left:2%;
       }
       input[type="submit"]{
