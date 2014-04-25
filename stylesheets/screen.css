@@ -217,7 +217,7 @@ header nav a:first-child {
 }
 /* line 156, ../sass/screen.scss */
 #somos .clickerLogo {
-  background: url(../img/content/logoBig.png) 50% 200px no-repeat fixed;
+  background: url(../img/content/logobig.png) 50% 200px no-repeat fixed;
   min-height: 1000px;
   padding: 0;
   margin: 0;
