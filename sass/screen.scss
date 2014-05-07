@@ -97,6 +97,7 @@ $aqua:#2DEAE0;
 }
 
 /* ===================================== Site ===================================== */
+body{min-width: 1024px; overflow-x: hidden;}
 
 .wrapper{margin:0 auto;max-width:$mxw;}
 .cursor{cursor: url(../img/layout/clickerCursor.svg), auto;height:100%;width:100%;position:absolute;top:0;left:0;}
@@ -105,15 +106,16 @@ a{cursor: url(../img/layout/pointer.svg), auto;}
 /* ===================================== Header ===================================== */
 
 header{
+  padding: 0 5px;
   position:fixed;
-  z-index:2000;
+  z-index:9000;
   width:100%;
   .invisible{display:none}
   h1{
     @include transition(all,0.5s,ease-in);
     margin:1em 0 0.7em;
     float:left;
-    width:120px/$mxw*100%;
+    width:124px;
     height:2.5em;
     a{
       display:block;
@@ -123,7 +125,7 @@ header{
     }
   }
   nav{
-    width:432px/$mxw*100%;
+    width:650px/$mxw*100%;
     float:right;
     a{
       font-family:$titleFont;
@@ -146,7 +148,7 @@ header{
 }
 
 /* ===================================== Clase para todas las secciones ===================================== */
-.story { height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
+.story { height: 1000px; padding: 0 5px; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(0,0,0,0.4); box-shadow: 0 0 50px rgba(0,0,0,0.8);}
 
 
 
@@ -309,12 +311,12 @@ header{
 }
 /*=============== Equipo =================*/
 #equipo{
-  height:1100px;
+  height:auto;
   background:url(../img/layout/equipo.png);
   .infoEquipo{
     max-width:1200px;
     margin:0 auto;
-    padding-top: 10em;
+    padding-top: 3em;
     z-index:200;
     h3{
       font-family: 'bebas_neuebook',sans-serif;

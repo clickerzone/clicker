@@ -25,12 +25,10 @@ $(document).ready(function(){
 
 
 
-	/*SERVICIOS*/
-
-
-
-
-
+	/*Ajx form*/
+    $('#theForm').ajaxForm(function() { 
+        alert("Mensaje enviado!");
+    });
 
 	/*SERVICIOS*/
 	if(titles.hasClass("cycle-slide-active")){
