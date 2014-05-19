@@ -20,20 +20,17 @@ $(document).ready(function(){
 		} else {
 			$(logo).addClass('invisible');
 		}
-		
-	});
 
-	$('#equipo').waypoint(function() {
-		if($(".grid").hasClass('invisible')){
-			$(".grid").removeClass('invisible').addClass("fadeInLeft");
-		}else{
-			$(".grid").addClass('invisible');
-		}
 	});
 
 
 
+	/*Ajx form*/
+    $('#theForm').ajaxForm(function() { 
+        alert("Mensaje enviado!");
+    });
 
+	/*SERVICIOS*/
 	if(titles.hasClass("cycle-slide-active")){
 		$(titles).each(function(index){
 			if(index===0){
@@ -65,7 +62,7 @@ function init() {
 			easing = mina.easeinout;
 
 		[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
-			var s = Snap( el.querySelector( 'svg' ) ), 
+			var s = Snap( el.querySelector( 'svg' ) ),
 			path = s.select( 'path' ),
 				pathConfig = {
 					from : path.attr( 'd' ),
@@ -84,5 +81,5 @@ function init() {
 
 	init();
 
-	
+
 });
